@@ -1,0 +1,99 @@
+/* Reset simples */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: linear-gradient(135deg, #e0f7fa, #ffffff);
+  color: #2c3e50;
+  line-height: 1.6;
+  padding: 30px 20px;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+header {
+  background-color: #00796b;
+  padding: 25px 20px;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  text-align: center;
+  color: #e0f2f1;
+  font-weight: 700;
+  font-size: 1.8rem;
+  letter-spacing: 0.05em;
+  margin-bottom: 30px;
+  user-select: none;
+}
+
+main {
+  background: #ffffffcc; /* leve transparência */
+  border-radius: 16px;
+  padding: 30px 25px;
+  max-width: 720px;
+  margin: 0 auto;
+  box-shadow: 0 8px 24px rgba(0,0,0,0.08);
+  transition: box-shadow 0.3s ease;
+}
+
+main:hover {
+  box-shadow: 0 12px 36px rgba(0,0,0,0.15);
+}
+
+h1 {
+  font-size: 2.5rem;
+  color: #004d40;
+  margin-bottom: 15px;
+  text-shadow: 0 1px 2px rgba(0,0,0,0.1);
+}
+
+p {
+  font-size: 1.1rem;
+  color: #34495e;
+  max-width: 600px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+footer {
+  margin-top: auto;
+  text-align: center;
+  font-size: 0.9rem;
+  color: #7f8c8d;
+  padding: 20px 0 10px;
+  font-style: italic;
+  user-select: none;
+}
+
+/* Link styling - caso queira usar futuramente */
+a {
+  color: #00796b;
+  text-decoration: none;
+  font-weight: 600;
+  transition: color 0.3s ease;
+}
+
+a:hover {
+  color: #004d40;
+  text-decoration: underline;
+}
+
+/* Responsividade simples */
+@media (max-width: 600px) {
+  body {
+    padding: 20px 10px;
+  }
+  main {
+    padding: 20px 15px;
+  }
+  h1 {
+    font-size: 2rem;
+  }
+  p {
+    font-size: 1rem;
+  }
+}
